@@ -1,9 +1,14 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  background: #0A0A0A;
-  color: #FFFFFF;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  antialiased: true;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-black text-white antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
 }
-
